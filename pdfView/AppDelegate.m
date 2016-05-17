@@ -17,7 +17,8 @@
     [_popUp insertItemWithTitle:@"Two Uo" atIndex:2];
     [_popUp insertItemWithTitle:@"Two Up Continuous" atIndex:3];
     [_pdfView setDisplayMode:0];
-
+    _i = 0;
+    
     // Insert code here to initialize your application
 }
 
@@ -73,18 +74,14 @@
     if ([[sender title] isEqual:@"Preview"]) {
         [_pdfView goToPreviousPage:nil];
     }
-    if ([[sender title] isEqual:@"Find"]) {
-        NSArray *myFind = [_myDoc findString:@"Share" withOptions:0];
-        [_pdfView setCurrentSelection:myFind[0]];
-        [_pdfView scrollSelectionToVisible:nil];
-    }
 }
 
 - (IBAction)find:(id)sender {
     [_textFindCell setSearchMenuTemplate:_searchMenu];
     NSString *searchString = [_textFind stringValue];
-    NSArray *myFind = [_myDoc findString:searchString withOptions:0];
-    [_pdfView setCurrentSelection:myFind[0]];
+    _myFind = NULL;
+    _myFind = [_myDoc findString:searchString withOptions:NSCaseInsensitiveSearch];
+    [_pdfView setCurrentSelection:_myFind[0]];
     [_pdfView scrollSelectionToVisible:nil];
 }
 
@@ -100,6 +97,22 @@
     }
     if ([[sender titleOfSelectedItem] isEqual:@"Two Up Continuous"]) {
         [_pdfView setDisplayMode:3];
+    }
+}
+
+- (IBAction)findMenu:(id)sender {
+    [_textFind selectText:nil];
+    if ([[sender title] isEqualToString:@">"]||[[sender title] isEqualToString:@"Find Next"]) {
+        if (_i<[_myFind count]) {
+        [_pdfView setCurrentSelection:_myFind[++_i]];
+        [_pdfView scrollSelectionToVisible:nil];
+        }
+    }
+    if ([[sender title] isEqualToString:@"<"]||[[sender title] isEqualToString:@"Find Previous"]) {
+        if (_i) {
+        [_pdfView setCurrentSelection:_myFind[--_i]];
+        [_pdfView scrollSelectionToVisible:nil];
+        }
     }
 }
 @end

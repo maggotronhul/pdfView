@@ -20,12 +20,16 @@
 @property (weak) IBOutlet NSSearchFieldCell *textFindCell;
 @property (weak) IBOutlet NSMenu *searchMenu;
 @property (weak) IBOutlet NSPopUpButton *popUp;
+@property NSArray *myFind;
+@property unsigned i;
+
 
 
 - (IBAction)addButton:(id)sender;
 - (IBAction)navigate:(id)sender;
 - (IBAction)find:(id)sender;
 - (IBAction)viewStyle:(id)sender;
+- (IBAction)findMenu:(id)sender;
 
 
 
