@@ -192,13 +192,13 @@
                                         </menuItem>
                                         <menuItem title="Find Next" tag="2" keyEquivalent="g" id="208">
                                             <connections>
-                                                <action selector="findMenu:" target="494" id="b7P-JV-oYk"/>
+                                                <action selector="findMenuItem:" target="494" id="5BY-68-lVt"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="213">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                             <connections>
-                                                <action selector="findMenu:" target="494" id="y1e-EX-Yrr"/>
+                                                <action selector="findMenuItem:" target="494" id="evQ-VY-KpV"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="221">
@@ -788,6 +788,25 @@
                         </searchField>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="moc-Dz-p0w"/>
+                    <toolbarItem implicitItemIdentifier="56473D00-2A37-4C94-9939-EB90DC4D2416" label="Find" paletteLabel="Find" id="lpn-MW-YHa">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="18" height="24"/>
+                        <size key="maxSize" width="104" height="26"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="Y0M-Kn-m0a">
+                            <rect key="frame" x="0.0" y="14" width="64" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="NQ7-ZD-KnW">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="&lt;" width="28"/>
+                                    <segment label="&gt;" tag="1"/>
+                                </segments>
+                                <connections>
+                                    <action selector="findMenu:" target="494" id="c1h-rT-oEU"/>
+                                </connections>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="hKo-Ym-1DX"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="tl1-gh-28m"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zQD-GI-aOL"/>
@@ -803,8 +822,7 @@
                     <toolbarItem reference="zQD-GI-aOL"/>
                     <toolbarItem reference="bDc-n8-BZ7"/>
                     <toolbarItem reference="cFw-qw-I3a"/>
-                    <toolbarItem reference="Bou-Ph-0Dg"/>
-                    <toolbarItem reference="O7c-ZA-1hp"/>
+                    <toolbarItem reference="lpn-MW-YHa"/>
                 </defaultToolbarItems>
             </toolbar>
             <point key="canvasLocation" x="203" y="1247"/>

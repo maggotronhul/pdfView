@@ -103,16 +103,31 @@
 
 - (IBAction)findMenu:(id)sender {
     [_textFind selectText:nil];
-    if ([[sender title] isEqualToString:@">"]||[[sender title] isEqualToString:@"Find Next"]) {
+    if ([sender isSelectedForSegment:1]/*||[[sender title] isEqualToString:@"Find Next"]*/) {
         if (_i<[_myFind count]) {
         [_pdfView setCurrentSelection:_myFind[++_i]];
         [_pdfView scrollSelectionToVisible:nil];
         }
     }
-    if ([[sender title] isEqualToString:@"<"]||[[sender title] isEqualToString:@"Find Previous"]) {
+    if ([sender isSelectedForSegment:0]/*||[[sender title] isEqualToString:@"Find Previous"]*/) {
         if (_i) {
         [_pdfView setCurrentSelection:_myFind[--_i]];
         [_pdfView scrollSelectionToVisible:nil];
+        }
+    }
+}
+
+- (IBAction)findMenuItem:(id)sender {
+    if ([[sender title] isEqualToString:@"Find Next"]) {
+        if (_i<[_myFind count]) {
+            [_pdfView setCurrentSelection:_myFind[++_i]];
+            [_pdfView scrollSelectionToVisible:nil];
+        }
+    }
+    if ([[sender title] isEqualToString:@"Find Previous"]) {
+        if (_i) {
+            [_pdfView setCurrentSelection:_myFind[--_i]];
+            [_pdfView scrollSelectionToVisible:nil];
         }
     }
 }

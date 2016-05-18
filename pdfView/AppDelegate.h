@@ -31,6 +31,8 @@
 - (IBAction)find:(id)sender;
 - (IBAction)viewStyle:(id)sender;
 - (IBAction)findMenu:(id)sender;
+- (IBAction)findMenuItem:(id)sender;
+
 
 
 
