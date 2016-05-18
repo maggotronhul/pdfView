@@ -658,118 +658,155 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <pdfView autoresizesSubviews="NO" displayMode="singlePage" autoScales="YES" translatesAutoresizingMaskIntoConstraints="NO" id="536">
-                        <rect key="frame" x="0.0" y="61" width="800" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                     </pdfView>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="546">
-                        <rect key="frame" x="14" y="13" width="88" height="32"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="76" id="6qX-xA-gfX"/>
-                        </constraints>
-                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="547">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="addButton:" target="494" id="553"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="556">
-                        <rect key="frame" x="190" y="13" width="88" height="32"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="76" id="h0F-fh-uxw"/>
-                        </constraints>
-                        <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="557">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent"></string>
-                        </buttonCell>
-                        <connections>
-                            <action selector="navigate:" target="494" id="578"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="566">
-                        <rect key="frame" x="102" y="13" width="88" height="32"/>
-                        <buttonCell key="cell" type="push" title="Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="567">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent"></string>
-                        </buttonCell>
-                        <connections>
-                            <action selector="navigate:" target="494" id="579"/>
-                        </connections>
-                    </button>
-                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="674">
-                        <rect key="frame" x="632" y="17" width="151" height="26"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="146" id="6WV-lZ-0cZ"/>
-                        </constraints>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="675">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
-                            <menu key="menu" title="OtherViews" id="676"/>
-                        </popUpButtonCell>
-                        <connections>
-                            <action selector="viewStyle:" target="494" id="702"/>
-                        </connections>
-                    </popUpButton>
-                    <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="611">
-                        <rect key="frame" x="280" y="20" width="252" height="22"/>
-                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Enter the Text" usesSingleLineMode="YES" bezelStyle="round" maximumRecents="5" recentsAutosaveName="autoSave" id="612">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </searchFieldCell>
-                        <connections>
-                            <action selector="find:" target="494" id="624"/>
-                            <outlet property="delegate" destination="620" id="621"/>
-                        </connections>
-                    </searchField>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w42-Kq-xKK">
-                        <rect key="frame" x="498" y="393" width="163" height="96"/>
-                    </customView>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8NF-Eg-SOY">
-                        <rect key="frame" x="583" y="13" width="49" height="32"/>
-                        <buttonCell key="cell" type="push" title="&gt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hdu-DU-KzK">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="findMenu:" target="494" id="saC-KZ-cRo"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z1X-MT-4ca">
-                        <rect key="frame" x="534" y="13" width="49" height="32"/>
-                        <buttonCell key="cell" type="push" title="&lt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bIE-Dt-eS8">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="findMenu:" target="494" id="tJ9-IT-fYU"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="546" secondAttribute="bottom" constant="20" symbolic="YES" id="0Yq-gT-Yhk"/>
-                    <constraint firstItem="Z1X-MT-4ca" firstAttribute="baseline" secondItem="556" secondAttribute="baseline" id="1Vb-og-WCv"/>
-                    <constraint firstItem="546" firstAttribute="baseline" secondItem="566" secondAttribute="baseline" id="3pe-nO-6qs"/>
-                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="7GC-VW-wph"/>
-                    <constraint firstItem="Z1X-MT-4ca" firstAttribute="leading" secondItem="611" secondAttribute="trailing" constant="8" symbolic="YES" id="BQ9-D5-ngX"/>
-                    <constraint firstItem="556" firstAttribute="leading" secondItem="566" secondAttribute="trailing" constant="12" symbolic="YES" id="CZP-uN-PXR"/>
-                    <constraint firstItem="566" firstAttribute="leading" secondItem="546" secondAttribute="trailing" constant="12" symbolic="YES" id="G0c-dE-axg"/>
-                    <constraint firstItem="611" firstAttribute="bottom" secondItem="Z1X-MT-4ca" secondAttribute="bottom" id="JKf-gP-34H"/>
-                    <constraint firstItem="Z1X-MT-4ca" firstAttribute="baseline" secondItem="8NF-Eg-SOY" secondAttribute="baseline" id="Qz6-4a-B4h"/>
-                    <constraint firstAttribute="trailing" secondItem="674" secondAttribute="trailing" constant="20" symbolic="YES" id="VcQ-ex-Ikr"/>
-                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" id="XyW-pj-gGV"/>
-                    <constraint firstItem="8NF-Eg-SOY" firstAttribute="top" secondItem="674" secondAttribute="top" id="afQ-uu-quz"/>
-                    <constraint firstItem="674" firstAttribute="leading" secondItem="8NF-Eg-SOY" secondAttribute="trailing" constant="8" symbolic="YES" id="cfi-Eu-Tmt"/>
-                    <constraint firstItem="8NF-Eg-SOY" firstAttribute="leading" secondItem="Z1X-MT-4ca" secondAttribute="trailing" constant="12" symbolic="YES" id="hrG-Be-9gj"/>
-                    <constraint firstItem="546" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="jAN-8b-brU"/>
-                    <constraint firstItem="546" firstAttribute="top" secondItem="536" secondAttribute="bottom" constant="20" symbolic="YES" id="pF0-Ge-gkL"/>
-                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" id="tOg-gd-bch"/>
-                    <constraint firstItem="611" firstAttribute="leading" secondItem="556" secondAttribute="trailing" constant="8" symbolic="YES" id="yxk-rg-EXg"/>
-                    <constraint firstItem="566" firstAttribute="baseline" secondItem="556" secondAttribute="baseline" id="zkV-y3-U0r"/>
+                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" id="5G1-Le-5ic"/>
+                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="8S0-sG-hcy"/>
+                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" id="R4x-uG-M0v"/>
+                    <constraint firstAttribute="bottom" secondItem="536" secondAttribute="bottom" id="pAv-Nm-zcH"/>
                 </constraints>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="DC1FD3DC-6026-404F-B77D-8903A1C64D75" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="small" id="rVs-JY-e30">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="064E3424-A369-4038-8AEC-856AE3DB7A74" label="Add" paletteLabel="Add" id="BiS-nK-4Sg">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="40" height="32"/>
+                        <size key="maxSize" width="80" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="546">
+                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="547">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="addButton:" target="494" id="553"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="8938277E-A5B6-4BF9-A9B0-8E4936781DDE" label="Preview" paletteLabel="Preview" id="kCT-BQ-lzQ">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="40" height="32"/>
+                        <size key="maxSize" width="80" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="566">
+                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="&lt;&lt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="567">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <string key="keyEquivalent"></string>
+                            </buttonCell>
+                            <connections>
+                                <action selector="navigate:" target="494" id="579"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="320E44EB-47BD-4558-B802-54922154DF4E" label="Next" paletteLabel="Next" id="gdd-3S-iQC">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="40" height="32"/>
+                        <size key="maxSize" width="80" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="556">
+                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="&gt;&gt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="557">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <string key="keyEquivalent"></string>
+                            </buttonCell>
+                            <connections>
+                                <action selector="navigate:" target="494" id="578"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="4FD52046-B4B5-4D2D-9330-1DE630A8EDC7" label="Find Previous" paletteLabel="Find Previous" id="Bou-Ph-0Dg">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="70" height="32"/>
+                        <size key="maxSize" width="92" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="Z1X-MT-4ca">
+                            <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="&lt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bIE-Dt-eS8">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="findMenu:" target="494" id="tJ9-IT-fYU"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="601CFF67-9FC8-49E5-98E3-D649279899FC" label="Find Next" paletteLabel="Find Next" id="O7c-ZA-1hp">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="70" height="32"/>
+                        <size key="maxSize" width="83" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="8NF-Eg-SOY">
+                            <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="&gt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hdu-DU-KzK">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="findMenu:" target="494" id="saC-KZ-cRo"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="8364A81D-5A3A-474F-BCE7-131A59E68868" label="View Mode" paletteLabel="View Mode" id="hCZ-o2-1Su">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="151" height="26"/>
+                        <size key="maxSize" width="151" height="26"/>
+                        <popUpButton key="view" verticalHuggingPriority="750" id="674">
+                            <rect key="frame" x="0.0" y="14" width="151" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="675">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" title="OtherViews" id="676"/>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="viewStyle:" target="494" id="702"/>
+                            </connections>
+                        </popUpButton>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="7DD223F6-E92B-4007-9EEF-941D2B490F7D" label="Search" paletteLabel="Search" id="cFw-qw-I3a">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="252" height="22"/>
+                        <size key="maxSize" width="252" height="22"/>
+                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="611">
+                            <rect key="frame" x="0.0" y="14" width="252" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Enter the Text" usesSingleLineMode="YES" bezelStyle="round" maximumRecents="5" recentsAutosaveName="autoSave" id="612">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                            <connections>
+                                <action selector="find:" target="494" id="624"/>
+                                <outlet property="delegate" destination="620" id="621"/>
+                            </connections>
+                        </searchField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="moc-Dz-p0w"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="hKo-Ym-1DX"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="tl1-gh-28m"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zQD-GI-aOL"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="bDc-n8-BZ7"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="BiS-nK-4Sg"/>
+                    <toolbarItem reference="kCT-BQ-lzQ"/>
+                    <toolbarItem reference="gdd-3S-iQC"/>
+                    <toolbarItem reference="zQD-GI-aOL"/>
+                    <toolbarItem reference="cFw-qw-I3a"/>
+                    <toolbarItem reference="Bou-Ph-0Dg"/>
+                    <toolbarItem reference="O7c-ZA-1hp"/>
+                    <toolbarItem reference="zQD-GI-aOL"/>
+                    <toolbarItem reference="hCZ-o2-1Su"/>
+                    <toolbarItem reference="bDc-n8-BZ7"/>
+                    <toolbarItem reference="tl1-gh-28m"/>
+                </defaultToolbarItems>
+            </toolbar>
             <point key="canvasLocation" x="203" y="1247"/>
         </window>
         <customObject id="494" customClass="AppDelegate">

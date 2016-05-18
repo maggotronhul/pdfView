@@ -68,10 +68,10 @@
 }
 
 - (IBAction)navigate:(id)sender {
-    if ([[sender title]isEqual:@"Next"]) {
+    if ([[sender title]isEqual:@">>"]) {
         [_pdfView goToNextPage:nil];
     }
-    if ([[sender title] isEqual:@"Preview"]) {
+    if ([[sender title] isEqual:@"<<"]) {
         [_pdfView goToPreviousPage:nil];
     }
 }
