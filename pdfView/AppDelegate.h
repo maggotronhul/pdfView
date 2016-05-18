@@ -22,6 +22,7 @@
 @property (weak) IBOutlet NSPopUpButton *popUp;
 @property NSArray *myFind;
 @property unsigned i;
+@property (weak) IBOutlet NSToolbar *toolBar;
 
 
 

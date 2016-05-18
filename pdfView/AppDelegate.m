@@ -18,6 +18,7 @@
     [_popUp insertItemWithTitle:@"Two Up Continuous" atIndex:3];
     [_pdfView setDisplayMode:0];
     _i = 0;
+    _toolBar.allowsUserCustomization = NO;
     
     // Insert code here to initialize your application
 }
@@ -68,10 +69,10 @@
 }
 
 - (IBAction)navigate:(id)sender {
-    if ([[sender title]isEqual:@">>"]) {
+    if ([[sender title]isEqual:@"Next"]) {
         [_pdfView goToNextPage:nil];
     }
-    if ([[sender title] isEqual:@"<<"]) {
+    if ([[sender title] isEqual:@"Preview"]) {
         [_pdfView goToPreviousPage:nil];
     }
 }

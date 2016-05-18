@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -662,22 +662,22 @@
                     </pdfView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" id="5G1-Le-5ic"/>
-                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="8S0-sG-hcy"/>
-                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" id="R4x-uG-M0v"/>
-                    <constraint firstAttribute="bottom" secondItem="536" secondAttribute="bottom" id="pAv-Nm-zcH"/>
+                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" id="5fA-sM-91A"/>
+                    <constraint firstAttribute="bottom" secondItem="536" secondAttribute="bottom" id="9Kf-uU-Y2c"/>
+                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="cqt-qy-UwR"/>
+                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" id="xsc-JP-1uA"/>
                 </constraints>
             </view>
             <toolbar key="toolbar" implicitIdentifier="DC1FD3DC-6026-404F-B77D-8903A1C64D75" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="small" id="rVs-JY-e30">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="064E3424-A369-4038-8AEC-856AE3DB7A74" label="Add" paletteLabel="Add" id="BiS-nK-4Sg">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="40" height="32"/>
-                        <size key="maxSize" width="80" height="32"/>
+                        <size key="minSize" width="80" height="32"/>
+                        <size key="maxSize" width="100" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="546">
-                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <rect key="frame" x="0.0" y="14" width="80" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="547">
+                            <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="547">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
@@ -688,12 +688,12 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="8938277E-A5B6-4BF9-A9B0-8E4936781DDE" label="Preview" paletteLabel="Preview" id="kCT-BQ-lzQ">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="40" height="32"/>
-                        <size key="maxSize" width="80" height="32"/>
+                        <size key="minSize" width="80" height="31"/>
+                        <size key="maxSize" width="100" height="143"/>
                         <button key="view" verticalHuggingPriority="750" id="566">
-                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <rect key="frame" x="0.0" y="14" width="80" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="push" title="&lt;&lt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="567">
+                            <buttonCell key="cell" type="push" title="Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="567">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                                 <string key="keyEquivalent"></string>
@@ -705,12 +705,12 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="320E44EB-47BD-4558-B802-54922154DF4E" label="Next" paletteLabel="Next" id="gdd-3S-iQC">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="40" height="32"/>
-                        <size key="maxSize" width="80" height="32"/>
+                        <size key="minSize" width="80" height="32"/>
+                        <size key="maxSize" width="100" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="556">
-                            <rect key="frame" x="0.0" y="14" width="52" height="32"/>
+                            <rect key="frame" x="0.0" y="14" width="80" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="push" title="&gt;&gt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="557">
+                            <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="557">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                                 <string key="keyEquivalent"></string>
@@ -722,10 +722,10 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="4FD52046-B4B5-4D2D-9330-1DE630A8EDC7" label="Find Previous" paletteLabel="Find Previous" id="Bou-Ph-0Dg">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="70" height="32"/>
-                        <size key="maxSize" width="92" height="32"/>
+                        <size key="minSize" width="40" height="32"/>
+                        <size key="maxSize" width="40" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="Z1X-MT-4ca">
-                            <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                            <rect key="frame" x="19" y="14" width="40" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="push" title="&lt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bIE-Dt-eS8">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -738,10 +738,10 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="601CFF67-9FC8-49E5-98E3-D649279899FC" label="Find Next" paletteLabel="Find Next" id="O7c-ZA-1hp">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="70" height="32"/>
-                        <size key="maxSize" width="83" height="32"/>
+                        <size key="minSize" width="40" height="32"/>
+                        <size key="maxSize" width="40" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="8NF-Eg-SOY">
-                            <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                            <rect key="frame" x="9" y="14" width="40" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="push" title="&gt;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hdu-DU-KzK">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -771,10 +771,10 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="7DD223F6-E92B-4007-9EEF-941D2B490F7D" label="Search" paletteLabel="Search" id="cFw-qw-I3a">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="252" height="22"/>
+                        <size key="minSize" width="153" height="22"/>
                         <size key="maxSize" width="252" height="22"/>
                         <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="611">
-                            <rect key="frame" x="0.0" y="14" width="252" height="22"/>
+                            <rect key="frame" x="0.0" y="14" width="153" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Enter the Text" usesSingleLineMode="YES" bezelStyle="round" maximumRecents="5" recentsAutosaveName="autoSave" id="612">
                                 <font key="font" metaFont="system"/>
@@ -795,16 +795,15 @@
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="BiS-nK-4Sg"/>
+                    <toolbarItem reference="zQD-GI-aOL"/>
                     <toolbarItem reference="kCT-BQ-lzQ"/>
                     <toolbarItem reference="gdd-3S-iQC"/>
                     <toolbarItem reference="zQD-GI-aOL"/>
+                    <toolbarItem reference="hCZ-o2-1Su"/>
+                    <toolbarItem reference="bDc-n8-BZ7"/>
                     <toolbarItem reference="cFw-qw-I3a"/>
                     <toolbarItem reference="Bou-Ph-0Dg"/>
                     <toolbarItem reference="O7c-ZA-1hp"/>
-                    <toolbarItem reference="zQD-GI-aOL"/>
-                    <toolbarItem reference="hCZ-o2-1Su"/>
-                    <toolbarItem reference="bDc-n8-BZ7"/>
-                    <toolbarItem reference="tl1-gh-28m"/>
                 </defaultToolbarItems>
             </toolbar>
             <point key="canvasLocation" x="203" y="1247"/>
@@ -817,6 +816,7 @@
                 <outlet property="textFind" destination="611" id="634"/>
                 <outlet property="textFindCell" destination="612" id="660"/>
                 <outlet property="textFinder" destination="620" id="f17-yY-qsd"/>
+                <outlet property="toolBar" destination="rVs-JY-e30" id="OcC-99-7Lp"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
